@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     branch: master
-    commands:
+    steps:
       - git config --global user.name "IrresoluteArkia"
       - git config --global user.email "jacob@boytroop.com"
       - sed -i'' "s~https://github.com/IrresoluteArkia/blog-aws-integration-test.git~https://${GH_TOKEN}:x-oauth-basic@github.com/IrresoluteArkia/blog-aws-integration-test.git~" _config.yml

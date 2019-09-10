@@ -1,5 +1,6 @@
-deployment:
-  production:
+version: 2
+jobs:
+  build:
     branch: master
     commands:
       - git config --global user.name "IrresoluteArkia"
